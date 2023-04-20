@@ -1,0 +1,112 @@
+    body{
+        font-family:"Comic Sans MS";
+        background: linear-gradient(rgb(143,14,189),yellow) ;
+      color: yellow;/*  */
+        font-size: 12px;
+        padding-left: 10%;
+        padding-right: 10%;
+    
+    }
+
+
+    h1 {
+      padding-left: 20%;
+      padding-right: 20px;
+       font-size: 2em;
+    }
+    h2{
+        font-size: 1.2em;
+    }
+
+
+   
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
+        
+    }
+    li a:hover{
+        background-color: blueviolet;
+
+    }
+
+    .important{
+        color: yellow;
+        background-color: rgb(208, 121, 240);
+        border-style:solid;
+        border-width: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.7em;
+        margin: 10px;
+    
+    
+    }
+    .lightPurp{
+        background-color: rgb(208, 121, 240);
+        color:#000000;
+        padding: 20px;
+        padding-top: 5px;
+    }
+    .active{
+        background-color: aqua;
+        color: #000000;
+    }
+.container{
+    background-color:rgb(208, 121, 240) ;
+    padding: 20px;
+    padding-top: 5px;
+    overflow: auto;
+    }
+.flex-container
+{
+background-color: chocolate;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+margin-left: 5%;
+margin-right: 5%;
+padding: 10px;
+justify-content: space-around;
+}
+.image{
+    padding: 2  px;
+    border-style: solid;
+margin: 10px;
+    background-color: w;
+}
+    #standOut{
+        font-size: 2em;
+        font-style: italic;
+        
+    }
+    #menu
+    {
+     
+        list-style-type: none;
+        border-left: solid;
+        border-color: white;
+    background-color: coral;
+    overflow: hidden;
+ 
+    }
+    #imageRight{
+        float: right;
+
+border-style: solid;
+padding: 10px;
+margin-left: 20px;
+
+    }
+    #imageLeft{
+        float: Left;
+padding: 10px;
+margin-right: 20px;
+border-style: solid;
+    }
+
+    
+   

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title> Title Pgage weewoo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <ul id = "menu"> <!--menu-->
+            <li><a href="index.html"> Page 1</a> </li>
+            <li><a href="index2.html">  Page 2</a></li>
+            <li class = "active"><a href="quiz.html"> Page 3</a></li>
+        </ul>
+</div>
+<h1> Here iS A Quiz</h1>
+
+<p> weewoo quiz time</p>
+
+<form name = "Quiz">
+<label for="name"> Enter your Name
+</label>
+<input type="text" name = "name" size = 30>
+
+
+<p>Question 1 weewoo</p>
+<input type="radio" name = "growth" value = "30%">
+<label for ="30%"> 30 %</label><br>
+<input type="radio" name = "growth" value = "50%">
+<label for =  "50%"> 50 %</label><br>
+<input type="radio" name = "growth" value = "70%">
+<label for = "70%"> 70 %</label><br><br>
+
+<label for= "talent"> Question2</label> <br>
+<input type="number" name = "talent" min = 0 max = 100 step="10" >
+</form>
+
+<button type="button" onclick="checkAnswers()"> Submit </button>
+
+<script src ="quizscript.js">
+    console.log("hello");
+
+function finishFunction(){
+    alert("Thank you for completing the quiz");
+
+}
+
+function checkAnswers(){
+    var score = 0;
+
+    //assign the quiz elements to the quiz variable    
+    quiz = document.forms.Quiz.elements;
+    
+    //"growth is the label we assigned to the questions"
+    answer1 = quiz.growth.value;
+    if (answer1 == "70%") {
+                score += 1;
+    }
+    answer2 = quiz.talent.value;
+    if (answer2 == "50") {
+        score = score + 1;
+
+    }
+    userName= quiz.name.value;
+
+    alert("well done " +  userName + " your score was " + score);
+
+}
+</script>
+</body>
+</html>
